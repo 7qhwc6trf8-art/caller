@@ -711,7 +711,8 @@ class PremiumTagMaster:
                     self.stats["users_processed"] += 1
                     
                 # Wait for batch completion with progress display
-                results = await asyncio.gather(*tasks, return_exceptions=True)
+                for user in batch:
+                    await self.send_smart_tag_with_retry(chat_entity, user, tag_text, batch_num)
                 
                 # Analyze results
                 success_count = sum(1 for r in results if r is True)
@@ -797,7 +798,12 @@ class PremiumTagMaster:
                 # Human-like delay
                 min_delay = self.config.get("premium_settings.delay_between_tags.min")
                 max_delay = self.config.get("premium_settings.delay_between_tags.max")
-                await asyncio.sleep(random.uniform(min_delay, max_delay))
+                delay = random.choice([
+                    random.uniform(2, 5),
+                    random.uniform(5, 12),
+                    random.uniform(10, 25)
+                ])
+                await asyncio.sleep(delay)
                 
                 return True
                 
