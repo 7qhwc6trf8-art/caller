@@ -1,5 +1,5 @@
 aiogram>=3.4.1
 telethon>=1.34.0
-colorama>=0.4.6
+colorama
 aiofiles>=23.2.1
 tqdm>=4.66.1

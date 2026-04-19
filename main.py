@@ -772,9 +772,9 @@ class PremiumTagMaster:
                 if self.config.get("advanced_features.smart_personalization"):
                     personalized_text = text
                     if user.is_premium:
-                        personalized_text = f"👑 {personalized_text}"
+                        personalized_text = f"{personalized_text}"
                     if user.tag_count == 0:
-                        personalized_text = f"🎯 {personalized_text}"
+                        personalized_text = f"{personalized_text}"
                 else:
                     personalized_text = text
                     
