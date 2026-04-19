@@ -153,3 +153,13 @@ Bot shutdown by user
 ║  💰 Efficiency: 0.55 tags/sec                                            ║
 ╚══════════════════════════════════════════════════════════════════╝
             
+2026-04-19 20:28:46,455 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 20:28:47,317 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 20:28:47,317 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 20:28:47,317 - INFO - 💡 Use /help in PM to see all commands
