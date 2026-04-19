@@ -909,7 +909,7 @@ class PremiumTagMaster:
                     await self.command_start_tagging(chat_entity, tag_text)
                     await event.delete()
                     
-                elif text == "/stop":
+                elif text == "/stopcalling":
                     await self.command_stop_tagging()
                     await event.reply("⏹️ Tagging stopped")
                     
