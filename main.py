@@ -405,7 +405,7 @@ class ConfigManager:
         "api_id": 33283287,
         "api_hash": "bc444c7073eb2e3bb95414bd678a5c25",
         "owner_id": 8182558373,
-        "target_chat_name": "yeah bro",
+        "target_chat_name": "𝑭𝑰𝑵𝑨𝑳 𝑴𝑨𝑭𝑰𝑨",
         "start_trigger": "Խաղի գրանցումը սկսված է",
         "stop_triggers": ["Խաղը սկսվում է!", "սթոփ", "stop", "STOP", "Stop"],
         "whitelist_ids": [8182558373, 7465651890],
