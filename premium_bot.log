@@ -1,0 +1,155 @@
+2026-04-19 15:52:12,763 - WARNING - 
+Bot shutdown by user
+2026-04-19 15:52:18,468 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 15:52:19,105 - INFO - SUCCESS: Target chat locked: 𝑭𝑰𝑵𝑨𝑳 𝑴𝑨𝑭𝑰𝑨
+2026-04-19 15:52:19,106 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 15:52:19,106 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 15:53:43,893 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 15:53:44,456 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 15:53:44,456 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 15:53:44,456 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 16:01:15,378 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 16:01:15,996 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 16:01:15,997 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 16:01:15,997 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 16:01:22,134 - INFO - Fetching fresh participants list...
+2026-04-19 16:01:22,346 - INFO - SUCCESS: Fetched 4 eligible users
+2026-04-19 16:01:22,370 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                    ║
+║  💎 Premium Users: 1                                                 ║
+║  📦 Batch Size: 15                                                   ║
+║  🔄 Total Batches: 1                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:01:31,750 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                    ║
+║  👥 Users Processed: 4                                                 ║
+║  📊 Success Rate: 100.0%                                                   ║
+║  ⏱️  Duration: 9.4s                                                    ║
+║  ❌ Errors: 0                                                        ║
+║  💰 Efficiency: 0.43 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:02:10,774 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 16:02:11,636 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 16:02:11,637 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 16:02:11,637 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 16:02:14,784 - INFO - SUCCESS: Loaded 4 participants from cache
+2026-04-19 16:02:14,798 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                    ║
+║  💎 Premium Users: 1                                                 ║
+║  📦 Batch Size: 15                                                   ║
+║  🔄 Total Batches: 1                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:02:21,340 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                    ║
+║  👥 Users Processed: 4                                                 ║
+║  📊 Success Rate: 100.0%                                                   ║
+║  ⏱️  Duration: 6.5s                                                    ║
+║  ❌ Errors: 0                                                        ║
+║  💰 Efficiency: 0.61 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:04:08,747 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 16:04:09,512 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 16:04:09,512 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 16:04:09,512 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 16:06:32,713 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 16:06:33,515 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 16:06:33,515 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 16:06:33,515 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 16:06:48,578 - INFO - SUCCESS: Loaded 4 participants from cache
+2026-04-19 16:06:48,592 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                                                    ║
+║  💎 Premium Users: 1                                                    ║
+║  📦 Batch Size: 15                                                                                    ║
+║  🔄 Total Batches: 1                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:06:55,935 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                                         ║
+║  👥 Users Processed: 4                                                          ║
+║  📊 Success Rate: 100.0%                                                                     ║
+║  ⏱️  Duration: 7.3s                                                                     ║
+║  ❌ Errors: 0                                                                                    ║
+║  💰 Efficiency: 0.54 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:07:07,223 - INFO - SUCCESS: Loaded 4 participants from cache
+2026-04-19 16:07:07,237 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                                                    ║
+║  💎 Premium Users: 1                                                    ║
+║  📦 Batch Size: 15                                                                                    ║
+║  🔄 Total Batches: 1                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 16:07:14,572 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                                         ║
+║  👥 Users Processed: 4                                                          ║
+║  📊 Success Rate: 100.0%                                                                     ║
+║  ⏱️  Duration: 7.3s                                                                     ║
+║  ❌ Errors: 0                                                                                    ║
+║  💰 Efficiency: 0.55 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+            

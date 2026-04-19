@@ -1,0 +1,18 @@
+[16:05:37] 
+Bot stopped by user
+[16:05:53] 
+╔════════════════════════════════════════════╗
+║     TAG MASTER v5.0 - WORKING EDITION      ║
+╠════════════════════════════════════════════╣
+║  Commands:                                 ║
+║  /tag [msg] - Start tagging               ║
+║  /stop       - Stop tagging               ║
+║  /status     - Check status               ║
+║  /stats      - View statistics            ║
+║  /help       - Show help                  ║
+╚════════════════════════════════════════════╝
+        
+[16:05:53] Searching for chat: yeah bro
+[16:05:54] Found chat: yeah bro
+[16:05:54] Ready to tag in: yeah bro
+[16:05:54] Bot is running! Use /tag in any group to start
