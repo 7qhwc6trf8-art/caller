@@ -1,0 +1,1 @@
+2026-04-19 21:10:48,993 - ERROR - Fatal error: The authorization key (session file) was used under two different IP addresses simultaneously, and can no longer be used. Use the same session exclusively, or use different sessions (caused by InvokeWithLayerRequest(InitConnectionRequest(GetConfigRequest)))

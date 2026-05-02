@@ -1,10 +1,8 @@
-"""
-╔══════════════════════════════════════════════════════════════════╗
+"""╔══════════════════════════════════════════════════════════════════╗
 ║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
 ║         Advanced Caching System | No Redis Required              ║
 ║                    Enterprise Grade System                       ║
-╚══════════════════════════════════════════════════════════════════╝
-"""
+╚══════════════════════════════════════════════════════════════════╝"""
 
 import asyncio
 import random
@@ -35,6 +33,7 @@ from asyncio import Lock as AsyncLock
 init(autoreset=True)
 
 # ==================== ADVANCED LOGGING ====================
+
 class PremiumLogger:
     """Professional logging with colors, emojis, and file rotation"""
     
@@ -93,6 +92,7 @@ class PremiumLogger:
 logger = PremiumLogger()
 
 # ==================== ADVANCED CACHE SYSTEM ====================
+
 class LRUCache:
     """Memory-efficient LRU Cache with TTL support"""
     
@@ -252,8 +252,8 @@ class SQLiteCache:
             if row:
                 # Update hit count
                 conn.execute(
-                    "UPDATE cache SET hit_count = ? WHERE key = ?",
-                    (row['hit_count'] + 1, key)
+                    "UPDATE cache SET hit_count = hit_count + 1 WHERE key = ?",
+                    (key,)
                 )
                 value = pickle.loads(row['value'])
                 self.memory_cache.set(key, value)
@@ -263,8 +263,8 @@ class SQLiteCache:
     async def set(self, key: str, value: Any, ttl: int = 3600):
         with self.get_connection() as conn:
             conn.execute(
-                "INSERT OR REPLACE INTO cache (key, value, expires_at, created_at, hit_count) VALUES (?, ?, ?, ?, ?)",
-                (key, pickle.dumps(value), time.time() + ttl, time.time(), 0)
+                "INSERT OR REPLACE INTO cache (key, value, expires_at, created_at, hit_count) VALUES (?, ?, ?, ?, COALESCE((SELECT hit_count FROM cache WHERE key = ?), 0))",
+                (key, pickle.dumps(value), time.time() + ttl, time.time(), key)
             )
         self.memory_cache.set(key, value)
         
@@ -275,7 +275,7 @@ class SQLiteCache:
             
     async def get_stats(self) -> Dict:
         with self.get_connection() as conn:
-            cursor = conn.execute("SELECT COUNT(*) as total, SUM(hit_count) as hits FROM cache")
+            cursor = conn.execute("SELECT COUNT(*) as total, COALESCE(SUM(hit_count), 0) as hits FROM cache")
             row = cursor.fetchone()
             return {
                 "total_entries": row['total'] or 0,
@@ -284,6 +284,7 @@ class SQLiteCache:
             }
 
 # ==================== DATABASE & ANALYTICS ====================
+
 class PremiumDatabase:
     """Advanced SQLite database for analytics"""
     
@@ -352,13 +353,20 @@ class PremiumDatabase:
         finally:
             conn.close()
             
-    async def add_session(self, start_time: float, end_time: float, tags_sent: int, users_processed: int, errors: int):
+    async def add_session(self, start_time: float, end_time: float = 0, tags_sent: int = 0, users_processed: int = 0, errors: int = 0):
         with self.get_connection() as conn:
             cursor = conn.execute(
                 "INSERT INTO sessions (start_time, end_time, tags_sent, users_processed, errors, status) VALUES (?, ?, ?, ?, ?, ?)",
-                (start_time, end_time, tags_sent, users_processed, errors, "completed")
+                (start_time, end_time, tags_sent, users_processed, errors, "running")
             )
             return cursor.lastrowid
+            
+    async def update_session(self, session_id: int, end_time: float, tags_sent: int, users_processed: int, errors: int):
+        with self.get_connection() as conn:
+            conn.execute(
+                "UPDATE sessions SET end_time = ?, tags_sent = ?, users_processed = ?, errors = ?, status = ? WHERE id = ?",
+                (end_time, tags_sent, users_processed, errors, "completed", session_id)
+            )
             
     async def add_tag(self, user_id: int, session_id: int, success: bool, error: str = None):
         with self.get_connection() as conn:
@@ -367,7 +375,7 @@ class PremiumDatabase:
                 (user_id, session_id, time.time(), success, error)
             )
             
-    async def upsert_user(self, user: 'UserProfile'):
+    async def upsert_user(self, user):
         with self.get_connection() as conn:
             conn.execute("""
                 INSERT OR REPLACE INTO users (user_id, username, first_name, last_name, is_premium, total_tags, last_tagged, created_at)
@@ -381,7 +389,7 @@ class PremiumDatabase:
     async def get_stats(self) -> Dict:
         with self.get_connection() as conn:
             # Total stats
-            cursor = conn.execute("SELECT COUNT(*) as total_sessions, SUM(tags_sent) as total_tags FROM sessions")
+            cursor = conn.execute("SELECT COUNT(*) as total_sessions, COALESCE(SUM(tags_sent), 0) as total_tags FROM sessions WHERE status = 'completed'")
             session_stats = cursor.fetchone()
             
             cursor = conn.execute("SELECT COUNT(*) as total_users FROM users")
@@ -398,6 +406,7 @@ class PremiumDatabase:
             }
 
 # ==================== CONFIGURATION ====================
+
 class ConfigManager:
     """Advanced configuration with validation and hot-reload"""
     
@@ -407,14 +416,14 @@ class ConfigManager:
         "owner_id": 8182558373,
         "target_chat_name": "yeah bro",
         "start_trigger": "Խաղի գրանցումը սկսված է",
-        "stop_triggers": ["Խաղը սկսվում է!", "սթոփ", "stop", "STOP", "Stop"],
+        "stop_triggers": ["Խաղը սկսվում է!", "սթոփ", "stop", "STOP", "Stop", "stop calling", "enough"],
         "whitelist_ids": [8182558373, 7465651890],
         "premium_settings": {
-            "delay_between_tags": {"min": 2.5, "max": 4.5},
-            "batch_size": 15,
-            "batch_delay": 1.5,
-            "rate_limit_delay": 60,
-            "max_retries": 3,
+            "delay_between_tags": {"min": 0.5, "max": 2.5},
+            "batch_size": 45,
+            "batch_delay": 4.5,
+            "rate_limit_delay": 5,
+            "max_retries": 1,
             "auto_resume": True,
             "smart_detection": True,
             "analytics_enabled": True,
@@ -480,6 +489,7 @@ class ConfigManager:
         return False
 
 # ==================== DATA MODELS ====================
+
 @dataclass
 class UserProfile:
     """Enhanced user profile with engagement metrics"""
@@ -512,6 +522,7 @@ class UserProfile:
         return self.priority_score
 
 # ==================== SMART RATE LIMITER ====================
+
 class AdaptiveRateLimiter:
     """AI-powered adaptive rate limiting"""
     
@@ -553,6 +564,7 @@ class AdaptiveRateLimiter:
         self.failure_pattern.append(time.time())
 
 # ==================== PREMIUM TAG MASTER ====================
+
 class PremiumTagMaster:
     """The ultimate tagging automation system"""
     
@@ -613,13 +625,12 @@ class PremiumTagMaster:
         blacklist = set()  # Add dynamic blacklist here
         
         # Progress tracking
-        total_estimated = 100  # Will update dynamically
         count = 0
         
         async for user in self.client.iter_participants(chat_entity):
             count += 1
             if count % 50 == 0:
-                logger.progress(count, total_estimated, prefix='Fetching users:', suffix='Complete')
+                logger.progress(count, count, prefix='Fetching users:', suffix=f'Found: {count}')
                 
             if not user.bot and user.id not in whitelist and user.id not in blacklist:
                 profile = UserProfile(
@@ -657,9 +668,42 @@ class PremiumTagMaster:
                 user.tag_count = row['total_tags'] or 0
                 if row['last_tagged']:
                     user.last_tagged = datetime.fromtimestamp(row['last_tagged'])
+
+    async def send_batch_tag(self, chat_entity, users: List[UserProfile], tag_text: str, batch_num: int):
+        try:
+            # Create mentions for all users in batch
+            mentions = []
+            for user in users:
+                if user.username:
+                    mentions.append(f"@{user.username}")
+                else:
+                    name = f"{user.first_name or ''} {user.last_name or ''}".strip()
+                    mentions.append(f"<a href='tg://user?id={user.id}'>{name}</a>")
+            
+            # Format the message
+            if len(mentions) == 1:
+                message = f"{mentions[0]} {tag_text}"
+            else:
+                # Option 1: Space separated
+                message = f"{' '.join(mentions)}\n{tag_text}"
+                # Option 2: Comma separated with line break
+                # message = f"{', '.join(mentions)}\n{tag_text}"
+            
+            await self.rate_limiter.wait()
+            
+            await self.client.send_message(
+                chat_entity,
+                message,
+                parse_mode="html"
+            )
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error sending batch {batch_num}: {e}")
+            return False
                     
     async def smart_tagging_worker(self, chat_entity, users: List[UserProfile], tag_text: str):
-        """Advanced AI-powered tagging system"""
         async with self.locks["tagging"]:
             self.is_tagging = True
             self.stats["started_at"] = time.time()
@@ -669,98 +713,126 @@ class PremiumTagMaster:
             self.stats["failed_users"] = []
             
             # Create session in database
-            self.current_session_id = await self.db.add_session(
-                self.stats["started_at"], 0, 0, 0, 0
-            )
+            self.current_session_id = await self.db.add_session(self.stats["started_at"])
             
             # Apply smart sorting
             if self.config.get("advanced_features.premium_priority"):
                 users.sort(key=lambda x: (-x.is_premium, -x.priority_score))
                 
-            batch_size = self.config.get("premium_settings.batch_size")
-            total_batches = (len(users) + batch_size - 1) // batch_size
+            # Group users in batches of 5
+            users_per_message = 5
+            batches = [users[i:i + users_per_message] for i in range(0, len(users), users_per_message)]
             
             # Premium dashboard header
             logger.premium(f"""
-╔══════════════════════════════════════════════════════════════════╗
-║                    PREMIUM TAGGING SESSION v4.0                  ║
-╠══════════════════════════════════════════════════════════════════╣
-║  📊 Total Users: {len(users):<53}                                ║
-║  💎 Premium Users: {sum(1 for u in users if u.is_premium):<50}   ║
-║  📦 Batch Size: {batch_size:<53}                                 ║
-║  🔄 Total Batches: {total_batches:<51}                           ║
-╚══════════════════════════════════════════════════════════════════╝
-            """)
-            
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: {len(users):<53}                                ║
+    ║  💎 Premium Users: {sum(1 for u in users if u.is_premium):<50}   ║
+    ║  👥 Users per message: {users_per_message:<50}                   ║
+    ║  📦 Total Messages: {len(batches):<52}                           ║
+    ╚══════════════════════════════════════════════════════════════════╝""")
+
             # Process in batches
-            for batch_idx in range(0, len(users), batch_size):
+            for batch_idx, user_group in enumerate(batches, 1):
                 if not self.is_tagging:
                     logger.warning("Session interrupted by user")
                     break
                     
-                batch = users[batch_idx:batch_idx + batch_size]
-                batch_num = batch_idx // batch_size + 1
+                # Create mention string for 5 users
+                mentions = []
+                for user in user_group:
+                    if user.username:
+                        mentions.append(f"@{user.username}")
+                    else:
+                        name = f"{user.first_name or ''} {user.last_name or ''}".strip()
+                        mentions.append(f"<a href='tg://user?id={user.id}'>{name}</a>")
                 
-                # Process batch
-                tasks = []
-                for user in batch:
-                    task = asyncio.create_task(
-                        self.send_smart_tag_with_retry(chat_entity, user, tag_text, batch_num)
-                    )
-                    tasks.append(task)
-                    self.stats["users_processed"] += 1
+                # Join mentions with commas or spaces
+                mention_text = " ".join(mentions)  # Space separated
+                # OR use: mention_text = ", ".join(mentions)  # Comma separated
+                
+                # Add the tag text
+                full_message = f"{mention_text}\n{tag_text}"
+                
+                try:
+                    await self.rate_limiter.wait()
                     
-                # Wait for batch completion with progress display
-                for user in batch:
-                    await self.send_smart_tag_with_retry(chat_entity, user, tag_text, batch_num)
-                
-                # Analyze results
-                success_count = sum(1 for r in results if r is True)
-                self.stats["tags_sent"] += success_count
-                self.stats["errors"] += len(results) - success_count
-                
-                # Update progress
-                progress = (batch_idx + len(batch)) / len(users) * 100
-                logger.progress(
-                    batch_idx + len(batch), 
-                    len(users), 
-                    prefix='Tagging progress:',
-                    suffix=f'Complete | Success: {success_count}/{len(batch)}'
-                )
-                
-                # Smart batch delay
-                if batch_idx + batch_size < len(users):
-                    batch_delay = self.config.get("premium_settings.batch_delay")
-                    if success_count / len(batch) < 0.7:  # Low success rate
-                        batch_delay *= 2  # Increase delay
-                    await asyncio.sleep(batch_delay)
+                    # Send single message with 5 mentions
+                    await self.client.send_message(
+                        chat_entity,
+                        full_message,
+                        parse_mode="html"
+                    )
+                    
+                    # Record success for all 5 users
+                    for user in user_group:
+                        self.rate_limiter.record_success()
+                        await self.db.add_tag(user.id, self.current_session_id, True)
+                        
+                        # Update user stats
+                        user.tag_count += 1
+                        user.last_tagged = datetime.now()
+                        await self.db.upsert_user(user)
+                    
+                    self.stats["tags_sent"] += len(user_group)
+                    self.stats["users_processed"] += len(user_group)
+                    
+                    # Update progress
+                    logger.progress(
+                        batch_idx * users_per_message, 
+                        len(users), 
+                        prefix='Tagging progress:',
+                        suffix=f'Complete | Success: {len(user_group)} users'
+                    )
+                    
+                    # Smart delay between messages
+                    if batch_idx < len(batches):
+                        delay = random.uniform(3, 7)  # Delay between 3-7 seconds for each batch
+                        await asyncio.sleep(delay)
+                    
+                except errors.FloodWaitError as e:
+                    logger.warning(f"Flood wait {e.seconds}s for batch {batch_idx}")
+                    await asyncio.sleep(e.seconds)
+                    self.rate_limiter.record_failure()
+                    self.stats["errors"] += len(user_group)
+                    
+                except errors.RPCError as e:
+                    logger.error(f"RPC Error for batch {batch_idx}: {e}")
+                    self.stats["errors"] += len(user_group)
+                    await self.db.add_tag(0, self.current_session_id, False, str(e))
+                    
+                except Exception as e:
+                    logger.error(f"Unexpected error for batch {batch_idx}: {e}")
+                    self.stats["errors"] += len(user_group)
                     
             # Session complete
             session_duration = time.time() - self.stats["started_at"]
             success_rate = (self.stats["tags_sent"] / max(1, self.stats["users_processed"])) * 100
             
             # Update session in database
-            with self.db.get_connection() as conn:
-                conn.execute(
-                    "UPDATE sessions SET end_time = ?, tags_sent = ?, users_processed = ?, errors = ? WHERE id = ?",
-                    (time.time(), self.stats["tags_sent"], self.stats["users_processed"], 
-                     self.stats["errors"], self.current_session_id)
-                )
+            await self.db.update_session(
+                self.current_session_id, 
+                time.time(), 
+                self.stats["tags_sent"], 
+                self.stats["users_processed"], 
+                self.stats["errors"]
+            )
                 
             # Premium completion dashboard
             logger.premium(f"""
-╔══════════════════════════════════════════════════════════════════╗
-║                    SESSION COMPLETED SUCCESSFULLY                ║
-╠══════════════════════════════════════════════════════════════════╣
-║  ✅ Tags Sent: {self.stats['tags_sent']:<53}                     ║
-║  👥 Users Processed: {self.stats['users_processed']:<50}         ║
-║  📊 Success Rate: {success_rate:.1f}%{' ' * 51}                  ║
-║  ⏱️  Duration: {session_duration:.1f}s{' ' * 52}                 ║
-║  ❌ Errors: {self.stats['errors']:<57}                            ║
-║  💰 Efficiency: {(self.stats['tags_sent']/max(1,session_duration)):.2f} tags/sec{' ' * 44}║
-╚══════════════════════════════════════════════════════════════════╝
-            """)
-            
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    SESSION COMPLETED SUCCESSFULLY                ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  ✅ Messages Sent: {(self.stats['tags_sent']//5):<53}            ║
+    ║  👥 Users Mentioned: {self.stats['users_processed']:<50}         ║
+    ║  📊 Success Rate: {success_rate:.1f}%{' ' * 51}                  ║
+    ║  ⏱️  Duration: {session_duration:.1f}s{' ' * 52}                 ║
+    ║  ❌ Errors: {self.stats['errors']:<57}                            ║
+    ║  💰 Efficiency: {(self.stats['tags_sent']/max(1,session_duration)):.2f} users/sec{' ' * 44}║
+    ╚══════════════════════════════════════════════════════════════════╝""")
+
             self.is_tagging = False
             
     async def send_smart_tag_with_retry(self, chat_entity, user: UserProfile, text: str, batch_num: int):
@@ -773,9 +845,9 @@ class PremiumTagMaster:
                 if self.config.get("advanced_features.smart_personalization"):
                     personalized_text = text
                     if user.is_premium:
-                        personalized_text = f"{personalized_text}"
+                        personalized_text = f"{personalized_text} 💎"
                     if user.tag_count == 0:
-                        personalized_text = f"{personalized_text}"
+                        personalized_text = f"{personalized_text} 👋"
                 else:
                     personalized_text = text
                     
@@ -798,11 +870,7 @@ class PremiumTagMaster:
                 # Human-like delay
                 min_delay = self.config.get("premium_settings.delay_between_tags.min")
                 max_delay = self.config.get("premium_settings.delay_between_tags.max")
-                delay = random.choice([
-                    random.uniform(2, 5),
-                    random.uniform(5, 12),
-                    random.uniform(10, 25)
-                ])
+                delay = random.uniform(min_delay, max_delay)
                 await asyncio.sleep(delay)
                 
                 return True
@@ -831,9 +899,10 @@ class PremiumTagMaster:
     async def command_start_tagging(self, chat_entity, text: str = "🔥"):
         """Start premium tagging session"""
         if self.is_tagging:
-            logger.warning("Tagging already active! Use /stop first")
+            logger.warning("Tagging already active! Use /stopcalling first")
             return
             
+        logger.info(f"Starting tagging session with text: {text}")
         users = await self.get_chat_participants_advanced(chat_entity)
         self.active_tagging_task = asyncio.create_task(
             self.smart_tagging_worker(chat_entity, users, text)
@@ -841,22 +910,46 @@ class PremiumTagMaster:
         
     async def command_stop_tagging(self):
         """Gracefully stop tagging session"""
+        logger.info(f"🛑 Stop command received. Current status - is_tagging: {self.is_tagging}")
+        
+        if not self.is_tagging:
+            logger.warning("Stop called but no active tagging session")
+            return
+            
+        logger.info("Stopping tagging session gracefully...")
         self.is_tagging = False
+        
         if self.active_tagging_task and not self.active_tagging_task.done():
             self.active_tagging_task.cancel()
             try:
                 await self.active_tagging_task
+                logger.success("Tagging task cancelled successfully")
             except asyncio.CancelledError:
-                pass
+                logger.info("Tagging task was cancelled")
+            except Exception as e:
+                logger.error(f"Error while cancelling task: {e}")
+                
         self.active_tagging_task = None
-        logger.success("Tagging session stopped by command")
+        
+        # Update session in database
+        if self.current_session_id:
+            await self.db.update_session(
+                self.current_session_id,
+                time.time(),
+                self.stats["tags_sent"],
+                self.stats["users_processed"],
+                self.stats["errors"]
+            )
+            
+        logger.success("✅ Tagging session stopped successfully")
         
     async def get_chat_entity_smart(self):
         """Intelligent chat detection"""
         async for dialog in self.client.iter_dialogs():
             if dialog.name and self.config.get("target_chat_name").lower() in dialog.name.lower():
+                logger.info(f"Found target chat: {dialog.name} (ID: {dialog.id})")
                 return dialog.entity
-        raise ValueError("Target chat not found")
+        raise ValueError(f"Target chat '{self.config.get('target_chat_name')}' not found")
         
     async def command_dashboard(self, user_id: int):
         """Send comprehensive dashboard"""
@@ -875,8 +968,7 @@ class PremiumTagMaster:
 ║  💾 Cache Size: {cache_stats['total_entries']:<50}║
 ║  🎯 Cache Hits: {cache_stats['total_hits']:<51}║
 ║  📈 Current Session Tags: {self.stats['tags_sent']:<44}║
-╚══════════════════════════════════════════════════════════╝
-        """
+╚══════════════════════════════════════════════════════════╝"""
         await self.client.send_message(user_id, dashboard)
         
     async def run(self):
@@ -888,8 +980,7 @@ class PremiumTagMaster:
 ║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
 ║              Advanced Caching System | No Redis                  ║
 ║                    Enterprise Grade Ready                        ║
-╚══════════════════════════════════════════════════════════════════╝
-        """)
+╚══════════════════════════════════════════════════════════════════╝""")
         
         # Auto-detect target
         self.target_chat_entity = await self.get_chat_entity_smart()
@@ -898,70 +989,94 @@ class PremiumTagMaster:
         # Event handlers
         @self.client.on(events.NewMessage)
         async def premium_commands(event):
-            text = event.raw_text or ""
-            sender_id = event.sender_id
-            
-            if sender_id == self.config.get("owner_id"):
-                if text.startswith("/tag"):
-                    parts = text.split(maxsplit=1)
-                    tag_text = parts[1] if len(parts) > 1 else "🔥"
-                    chat_entity = await self.client.get_entity(event.chat_id)
-                    await self.command_start_tagging(chat_entity, tag_text)
-                    await event.delete()
-                    
-                elif text == "/stopcalling":
-                    await self.command_stop_tagging()
-                    await event.reply("⏹️ Tagging stopped")
-                    
-                elif text == "/stats":
-                    await self.command_dashboard(sender_id)
-                    
-                elif text == "/status":
-                    status = "🟢 ACTIVE" if self.is_tagging else "⚪ IDLE"
-                    await event.reply(f"""
-📊 **Bot Status**
+            try:
+                text = event.raw_text or ""
+                sender_id = event.sender_id
+                
+                # Debug logging
+                if sender_id == self.config.get("owner_id"):
+                    logger.debug(f"Owner command received: {text}")
+                
+                # Check owner commands
+                if sender_id == self.config.get("owner_id"):
+                    if text.startswith("/tag"):
+                        parts = text.split(maxsplit=1)
+                        tag_text = parts[1] if len(parts) > 1 else "🔥"
+                        chat_entity = await self.client.get_entity(event.chat_id)
+                        await self.command_start_tagging(chat_entity, tag_text)
+                        await event.delete()
+                        
+                    elif text == "/stopcalling" or text == "/stop":
+                        await self.command_stop_tagging()
+                        await event.reply("⏹️ Tagging session stopped successfully!")
+                        await event.delete()
+                        
+                    elif text == "/stats":
+                        await self.command_dashboard(sender_id)
+                        await event.delete()
+                        
+                    elif text == "/status":
+                        status = "🟢 ACTIVE" if self.is_tagging else "⚪ IDLE"
+                        await event.reply(f"""
+📊 Bot Status
 ━━━━━━━━━━━━━━━
 Status: {status}
 Tags Sent: {self.stats['tags_sent']}
 Session Active: {self.is_tagging}
 Cache System: SQLite + LRU
-                    """)
-                    
-                elif text == "/clear_cache":
-                    await self.cache.cleanup()
-                    await self.persistent_cache.clear_expired()
-                    await event.reply("🗑️ Cache cleared successfully!")
-                    
-                elif text == "/help":
-                    help_text = """
-🎮 **Premium Bot Commands v4.0**:
+Session ID: {self.current_session_id or 'None'}""")
+                        await event.delete()
+                        
+                    elif text == "/clear_cache":
+                        await self.cache.cleanup()
+                        await self.persistent_cache.clear_expired()
+                        await event.reply("🗑️ Cache cleared successfully!")
+                        await event.delete()
+                        
+                    elif text == "/help":
+                        help_text = """
+🎮 Premium Bot Commands v4.0:
 ━━━━━━━━━━━━━━━━━━━━━━━━━
 /tag [text] - Start AI-powered tagging
-/stop - Stop current session
+/stopcalling or /stop - Stop current session
 /stats - View detailed analytics
 /status - Check bot status
 /clear_cache - Clear all caches
 /help - Show this menu
 
-⚡ **Advanced Features**:
+⚡ Advanced Features:
 • Smart rate limiting
 • Multi-level caching
 • Priority tagging
 • Real-time analytics
 • Auto-retry system
-                    """
-                    await event.reply(help_text)
-                    
-            # Auto triggers
-            if self.target_chat_entity and event.chat_id == self.target_chat_entity.id:
-                if text == self.config.get("start_trigger"):
-                    await self.command_start_tagging(event.chat_id, "արի")
-                    logger.success("Auto-start triggered")
-                    
-                elif any(trigger in text for trigger in self.config.get("stop_triggers")):
-                    await self.command_stop_tagging()
-                    logger.success("Auto-stop triggered")
-                    
+
+📝 Auto Triggers:
+Start: "Խաղի գրանցումը սկսված է"
+Stop: Any configured stop trigger"""
+                        await event.reply(help_text)
+                        await event.delete()
+
+                # Auto triggers for target chat
+                if self.target_chat_entity and event.chat_id == self.target_chat_entity.id:
+                    # Check start trigger
+                    if text == self.config.get("start_trigger"):
+                        logger.success("Auto-start triggered by message in target chat")
+                        await self.command_start_tagging(event.chat_id, "արի 🔥")
+                        
+                    # Check stop triggers
+                    stop_triggers = self.config.get("stop_triggers", [])
+                    for trigger in stop_triggers:
+                        if trigger.lower() in text.lower():
+                            logger.info(f"🛑 Auto-stop triggered! Trigger word: '{trigger}' in message: '{text[:50]}'")
+                            await self.command_stop_tagging()
+                            # Optional: Send confirmation in chat
+                            await event.reply("⏹️ Tagging session stopped by auto-trigger")
+                            break
+                            
+            except Exception as e:
+                logger.error(f"Error in event handler: {e}")
+        
         # Periodic cache cleanup
         async def cache_cleaner():
             while True:
@@ -970,14 +1085,31 @@ Cache System: SQLite + LRU
                 await self.persistent_cache.clear_expired()
                 logger.debug("Cache cleanup completed")
                 
+        # Periodic stats saver
+        async def stats_saver():
+            while True:
+                await asyncio.sleep(300)  # Every 5 minutes
+                if self.current_session_id and self.is_tagging:
+                    await self.db.update_session(
+                        self.current_session_id,
+                        time.time(),
+                        self.stats["tags_sent"],
+                        self.stats["users_processed"],
+                        self.stats["errors"]
+                    )
+                    logger.debug("Session stats saved to database")
+                    
         asyncio.create_task(cache_cleaner())
+        asyncio.create_task(stats_saver())
         
         logger.success("Bot fully operational!")
         logger.premium("💡 Use /help in PM to see all commands")
+        logger.info(f"Stop triggers configured: {self.config.get('stop_triggers')}")
         
         await self.client.run_until_disconnected()
 
 # ==================== MAIN ====================
+
 async def main():
     try:
         config = ConfigManager()

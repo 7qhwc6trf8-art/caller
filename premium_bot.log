@@ -163,3 +163,798 @@ Bot shutdown by user
 2026-04-19 20:28:47,317 - INFO - SUCCESS: Target chat locked: yeah bro
 2026-04-19 20:28:47,317 - INFO - SUCCESS: Bot fully operational!
 2026-04-19 20:28:47,317 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 21:10:48,993 - ERROR - Fatal error: The authorization key (session file) was used under two different IP addresses simultaneously, and can no longer be used. Use the same session exclusively, or use different sessions (caused by InvokeWithLayerRequest(InitConnectionRequest(GetConfigRequest)))
+2026-04-19 21:11:29,039 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 21:11:30,143 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 21:11:30,143 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 21:11:30,143 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 21:11:50,516 - INFO - Fetching fresh participants list...
+2026-04-19 21:11:51,459 - INFO - SUCCESS: Fetched 178 eligible users
+2026-04-19 21:11:51,488 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 178                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 15                                                                                    ║
+║  🔄 Total Batches: 12                                                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 21:12:05,805 - INFO - Decreasing delay to 2.8s
+2026-04-19 21:12:32,564 - INFO - Decreasing delay to 2.7s
+2026-04-19 21:12:59,061 - INFO - Decreasing delay to 2.6s
+2026-04-19 21:13:51,113 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 21:13:52,324 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 21:13:52,325 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 21:13:52,325 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 21:14:03,007 - INFO - SUCCESS: Loaded 178 participants from cache
+2026-04-19 21:14:03,018 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 178                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 4                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 21:14:28,278 - INFO - Decreasing delay to 2.8s
+2026-04-19 21:14:35,144 - INFO - Decreasing delay to 2.7s
+2026-04-19 21:14:47,157 - INFO - Decreasing delay to 2.6s
+2026-04-19 21:15:02,730 - INFO - Decreasing delay to 2.4s
+2026-04-19 21:15:14,062 - INFO - Decreasing delay to 2.3s
+2026-04-19 21:15:25,720 - INFO - Decreasing delay to 2.2s
+2026-04-19 21:15:39,863 - INFO - Decreasing delay to 2.1s
+2026-04-19 21:15:49,420 - INFO - Decreasing delay to 2.0s
+2026-04-19 21:38:22,056 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 21:38:23,123 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 21:38:23,123 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 21:38:23,123 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 21:38:30,877 - INFO - Fetching fresh participants list...
+2026-04-19 21:38:31,723 - INFO - SUCCESS: Fetched 179 eligible users
+2026-04-19 21:38:31,748 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 179                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 4                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 21:38:48,340 - INFO - Decreasing delay to 2.8s
+2026-04-19 21:39:11,989 - INFO - Decreasing delay to 2.7s
+2026-04-19 21:39:17,757 - INFO - Decreasing delay to 2.6s
+2026-04-19 21:39:27,779 - INFO - Decreasing delay to 2.4s
+2026-04-19 21:39:43,790 - INFO - Decreasing delay to 2.3s
+2026-04-19 21:40:11,286 - INFO - Decreasing delay to 2.2s
+2026-04-19 22:52:54,692 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-19 22:52:55,560 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-19 22:52:55,561 - INFO - SUCCESS: Bot fully operational!
+2026-04-19 22:52:55,561 - INFO - 💡 Use /help in PM to see all commands
+2026-04-19 23:23:57,792 - INFO - Fetching fresh participants list...
+2026-04-19 23:23:58,431 - INFO - SUCCESS: Fetched 181 eligible users
+2026-04-19 23:23:58,470 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 181                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-19 23:24:11,998 - INFO - Decreasing delay to 2.8s
+2026-04-19 23:24:33,080 - INFO - Decreasing delay to 2.7s
+2026-04-19 23:24:44,738 - INFO - Decreasing delay to 2.6s
+2026-04-19 23:24:51,266 - INFO - Decreasing delay to 2.4s
+2026-04-19 23:24:57,561 - INFO - Decreasing delay to 2.3s
+2026-04-19 23:25:04,649 - INFO - Decreasing delay to 2.2s
+2026-04-19 23:25:24,580 - INFO - Decreasing delay to 2.1s
+2026-04-19 23:25:30,185 - INFO - Decreasing delay to 2.0s
+2026-04-20 23:57:31,567 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-20 23:57:32,531 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-20 23:57:32,532 - INFO - SUCCESS: Bot fully operational!
+2026-04-20 23:57:32,532 - INFO - 💡 Use /help in PM to see all commands
+2026-04-20 23:57:50,546 - INFO - Fetching fresh participants list...
+2026-04-20 23:57:51,123 - INFO - SUCCESS: Fetched 191 eligible users
+2026-04-20 23:57:51,152 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 191                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-20 23:58:00,123 - INFO - Decreasing delay to 2.8s
+2026-04-20 23:58:05,709 - INFO - Decreasing delay to 2.7s
+2026-04-20 23:58:22,266 - INFO - Decreasing delay to 2.6s
+2026-04-21 19:22:13,653 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-21 19:22:14,454 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-21 19:22:14,454 - INFO - SUCCESS: Bot fully operational!
+2026-04-21 19:22:14,454 - INFO - 💡 Use /help in PM to see all commands
+2026-04-21 19:22:33,995 - INFO - Fetching fresh participants list...
+2026-04-21 19:22:34,549 - INFO - SUCCESS: Fetched 191 eligible users
+2026-04-21 19:22:34,564 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 191                                                                                  ║
+║  💎 Premium Users: 22                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-21 19:22:53,611 - INFO - Decreasing delay to 2.8s
+2026-04-21 19:23:06,165 - INFO - Decreasing delay to 2.7s
+2026-04-21 19:23:13,022 - INFO - Decreasing delay to 2.6s
+2026-04-21 19:23:30,493 - INFO - Decreasing delay to 2.4s
+2026-04-21 19:23:47,287 - INFO - Decreasing delay to 2.3s
+2026-04-21 19:23:56,823 - INFO - Decreasing delay to 2.2s
+2026-04-21 19:24:12,742 - INFO - Decreasing delay to 2.1s
+2026-04-21 19:24:24,550 - INFO - Decreasing delay to 2.0s
+2026-04-21 20:03:39,403 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-21 20:03:40,351 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-21 20:03:40,351 - INFO - SUCCESS: Bot fully operational!
+2026-04-21 20:03:40,351 - INFO - 💡 Use /help in PM to see all commands
+2026-04-21 20:06:20,387 - INFO - Fetching fresh participants list...
+2026-04-21 20:06:21,206 - INFO - SUCCESS: Fetched 187 eligible users
+2026-04-21 20:06:21,226 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 187                                                                                  ║
+║  💎 Premium Users: 22                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-22 00:34:45,247 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-22 00:34:45,962 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-22 00:34:45,962 - INFO - SUCCESS: Bot fully operational!
+2026-04-22 00:34:45,962 - INFO - 💡 Use /help in PM to see all commands
+2026-04-22 00:34:59,385 - INFO - Fetching fresh participants list...
+2026-04-22 00:34:59,860 - INFO - SUCCESS: Fetched 186 eligible users
+2026-04-22 00:34:59,878 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 186                                                                                  ║
+║  💎 Premium Users: 22                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-22 00:35:12,892 - INFO - Decreasing delay to 2.8s
+2026-04-22 00:35:27,107 - INFO - Decreasing delay to 2.7s
+2026-04-22 00:35:33,475 - INFO - Decreasing delay to 2.6s
+2026-04-22 00:35:43,671 - INFO - Decreasing delay to 2.4s
+2026-04-22 00:35:48,764 - INFO - Decreasing delay to 2.3s
+2026-04-22 00:36:00,385 - INFO - Decreasing delay to 2.2s
+2026-04-22 00:36:26,054 - INFO - Decreasing delay to 2.1s
+2026-04-22 00:36:33,564 - INFO - Decreasing delay to 2.0s
+2026-04-22 18:50:55,506 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-22 18:50:56,303 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-22 18:50:56,303 - INFO - SUCCESS: Bot fully operational!
+2026-04-22 18:50:56,303 - INFO - 💡 Use /help in PM to see all commands
+2026-04-22 18:51:45,583 - INFO - Fetching fresh participants list...
+2026-04-22 18:51:46,345 - INFO - SUCCESS: Fetched 185 eligible users
+2026-04-22 18:51:46,362 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 185                                                                                  ║
+║  💎 Premium Users: 23                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-22 18:51:59,550 - INFO - Decreasing delay to 2.8s
+2026-04-22 18:52:08,227 - INFO - Decreasing delay to 2.7s
+2026-04-22 18:52:36,108 - INFO - Decreasing delay to 2.6s
+2026-04-22 18:52:47,517 - INFO - Decreasing delay to 2.4s
+2026-04-22 18:52:56,540 - INFO - Decreasing delay to 2.3s
+2026-04-22 18:53:05,523 - INFO - Decreasing delay to 2.2s
+2026-04-22 18:53:21,111 - INFO - Decreasing delay to 2.1s
+2026-04-22 18:53:28,339 - INFO - Decreasing delay to 2.0s
+2026-04-22 22:24:20,326 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-22 22:24:21,136 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-22 22:24:21,136 - INFO - SUCCESS: Bot fully operational!
+2026-04-22 22:24:21,136 - INFO - 💡 Use /help in PM to see all commands
+2026-04-22 22:25:49,691 - INFO - Fetching fresh participants list...
+2026-04-22 22:25:50,232 - INFO - SUCCESS: Fetched 183 eligible users
+2026-04-22 22:25:50,255 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 183                                                                                  ║
+║  💎 Premium Users: 22                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-22 22:26:05,046 - INFO - Decreasing delay to 2.8s
+2026-04-22 22:26:16,072 - INFO - Decreasing delay to 2.7s
+2026-04-22 22:26:38,402 - INFO - Decreasing delay to 2.6s
+2026-04-22 22:26:58,420 - INFO - Decreasing delay to 2.4s
+2026-04-22 22:27:07,572 - INFO - Decreasing delay to 2.3s
+2026-04-22 22:27:14,769 - INFO - Decreasing delay to 2.2s
+2026-04-22 22:27:24,192 - INFO - Decreasing delay to 2.1s
+2026-04-22 22:27:39,309 - INFO - Decreasing delay to 2.0s
+2026-04-26 13:56:54,008 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-26 13:56:54,923 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-26 13:56:54,924 - INFO - SUCCESS: Bot fully operational!
+2026-04-26 13:56:54,924 - INFO - 💡 Use /help in PM to see all commands
+2026-04-26 13:57:13,929 - INFO - Fetching fresh participants list...
+2026-04-26 13:57:14,643 - INFO - SUCCESS: Fetched 186 eligible users
+2026-04-26 13:57:14,669 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 186                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-26 13:57:38,822 - INFO - Decreasing delay to 2.8s
+2026-04-26 13:57:48,860 - INFO - Decreasing delay to 2.7s
+2026-04-26 13:58:17,504 - INFO - Decreasing delay to 2.6s
+2026-04-26 13:58:39,760 - INFO - Decreasing delay to 2.4s
+2026-04-26 13:59:05,020 - INFO - Decreasing delay to 2.3s
+2026-04-26 13:59:25,187 - INFO - Decreasing delay to 2.2s
+2026-04-26 13:59:43,461 - INFO - Decreasing delay to 2.1s
+2026-04-26 13:59:52,451 - INFO - Decreasing delay to 2.0s
+2026-04-26 21:30:54,567 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-04-26 21:30:55,519 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-04-26 21:30:55,519 - INFO - SUCCESS: Bot fully operational!
+2026-04-26 21:30:55,519 - INFO - 💡 Use /help in PM to see all commands
+2026-04-26 21:31:35,851 - INFO - Fetching fresh participants list...
+2026-04-26 21:31:36,974 - INFO - SUCCESS: Fetched 189 eligible users
+2026-04-26 21:31:36,995 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 189                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-04-26 21:32:05,362 - INFO - Decreasing delay to 2.8s
+2026-04-26 21:32:12,615 - INFO - Decreasing delay to 2.7s
+2026-04-26 21:32:39,210 - INFO - Decreasing delay to 2.6s
+2026-04-26 21:32:54,664 - INFO - Decreasing delay to 2.4s
+2026-04-26 21:33:01,561 - INFO - Decreasing delay to 2.3s
+2026-04-26 21:33:11,492 - INFO - Decreasing delay to 2.2s
+2026-04-26 21:33:38,769 - INFO - Decreasing delay to 2.1s
+2026-04-26 21:33:51,266 - INFO - Decreasing delay to 2.0s
+2026-05-01 21:50:21,123 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+        
+2026-05-01 21:50:21,996 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-01 21:50:21,997 - INFO - SUCCESS: Bot fully operational!
+2026-05-01 21:50:21,997 - INFO - 💡 Use /help in PM to see all commands
+2026-05-01 21:50:32,700 - INFO - Fetching fresh participants list...
+2026-05-01 21:50:33,411 - INFO - SUCCESS: Fetched 179 eligible users
+2026-05-01 21:50:33,430 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 179                                                                                  ║
+║  💎 Premium Users: 25                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 4                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+            
+2026-05-01 21:50:47,945 - INFO - Decreasing delay to 2.8s
+2026-05-01 21:50:55,684 - INFO - Decreasing delay to 2.7s
+2026-05-01 21:51:08,773 - INFO - Decreasing delay to 2.6s
+2026-05-01 21:51:19,593 - INFO - Decreasing delay to 2.4s
+2026-05-01 21:51:26,707 - INFO - Decreasing delay to 2.3s
+2026-05-01 21:51:36,788 - INFO - Decreasing delay to 2.2s
+2026-05-01 21:51:43,712 - INFO - Decreasing delay to 2.1s
+2026-05-01 21:51:50,605 - INFO - Decreasing delay to 2.0s
+2026-05-02 13:40:54,296 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:40:55,140 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 13:40:55,140 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 13:40:55,141 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 13:40:55,141 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 13:40:55,141 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 13:41:13,531 - INFO - Owner command received: /tag եկեք
+2026-05-02 13:41:13,793 - INFO - Starting tagging session with text: եկեք
+2026-05-02 13:41:13,795 - INFO - Fetching fresh participants list...
+2026-05-02 13:41:14,467 - INFO - SUCCESS: Fetched 4 eligible users
+2026-05-02 13:41:14,497 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                                                    ║
+║  💎 Premium Users: 1                                                    ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 1                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:41:18,521 - INFO - Owner command received: @armcipher եկեք 💎
+2026-05-02 13:41:41,533 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                                         ║
+║  👥 Users Processed: 4                                                          ║
+║  📊 Success Rate: 100.0%                                                                     ║
+║  ⏱️  Duration: 27.0s                                                                     ║
+║  ❌ Errors: 0                                                                                    ║
+║  💰 Efficiency: 0.15 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:41:54,302 - INFO - Owner command received: /tag արի
+2026-05-02 13:41:54,605 - INFO - Starting tagging session with text: արի
+2026-05-02 13:41:54,605 - INFO - SUCCESS: Loaded 4 participants from cache
+2026-05-02 13:41:54,616 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                                                    ║
+║  💎 Premium Users: 1                                                    ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 1                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:41:58,263 - INFO - Owner command received: @armcipher արի 💎
+2026-05-02 13:42:00,241 - INFO - Owner command received: /stopcalling
+2026-05-02 13:42:00,241 - INFO - 🛑 Stop command received. Current status - is_tagging: True
+2026-05-02 13:42:00,242 - INFO - Stopping tagging session gracefully...
+2026-05-02 13:42:00,243 - INFO - Tagging task was cancelled
+2026-05-02 13:42:00,257 - INFO - SUCCESS: ✅ Tagging session stopped successfully
+2026-05-02 13:42:16,011 - INFO - Owner command received: /tag արի
+2026-05-02 13:42:16,269 - INFO - Starting tagging session with text: արի
+2026-05-02 13:42:16,269 - INFO - SUCCESS: Loaded 4 participants from cache
+2026-05-02 13:42:16,280 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                                                    ║
+║  💎 Premium Users: 1                                                    ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 1                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:42:28,025 - INFO - Owner command received: Խաղը սկսվում է!
+2026-05-02 13:42:44,645 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                                         ║
+║  👥 Users Processed: 4                                                          ║
+║  📊 Success Rate: 100.0%                                                                     ║
+║  ⏱️  Duration: 28.4s                                                                     ║
+║  ❌ Errors: 0                                                                                    ║
+║  💰 Efficiency: 0.14 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:43:03,516 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:43:04,431 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 13:43:04,431 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 13:43:04,431 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 13:43:04,431 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 13:43:04,431 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 13:43:17,372 - INFO - Owner command received: /tag խաղը սկսվում ա արի
+2026-05-02 13:43:17,648 - INFO - Starting tagging session with text: խաղը սկսվում ա արի
+2026-05-02 13:43:17,663 - INFO - SUCCESS: Loaded 4 participants from cache
+2026-05-02 13:43:17,675 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 4                                                                                    ║
+║  💎 Premium Users: 1                                                    ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 1                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:43:22,047 - INFO - Owner command received: @armcipher խաղը սկսվում ա արի 💎
+2026-05-02 13:43:28,316 - INFO - Owner command received: stop calling
+2026-05-02 13:43:47,030 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    SESSION COMPLETED SUCCESSFULLY                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  ✅ Tags Sent: 4                                                                         ║
+║  👥 Users Processed: 4                                                          ║
+║  📊 Success Rate: 100.0%                                                                     ║
+║  ⏱️  Duration: 29.3s                                                                     ║
+║  ❌ Errors: 0                                                                                    ║
+║  💰 Efficiency: 0.14 tags/sec                                            ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:45:11,501 - INFO - Owner command received: /tag խաղը սկսվում ա արի
+2026-05-02 13:45:11,749 - INFO - Starting tagging session with text: խաղը սկսվում ա արի
+2026-05-02 13:45:11,753 - INFO - Fetching fresh participants list...
+2026-05-02 13:45:12,437 - INFO - SUCCESS: Fetched 182 eligible users
+2026-05-02 13:45:12,458 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║                    PREMIUM TAGGING SESSION v4.0                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  📊 Total Users: 182                                                                                  ║
+║  💎 Premium Users: 24                                                   ║
+║  📦 Batch Size: 45                                                                                    ║
+║  🔄 Total Batches: 5                                                                             ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:46:02,833 - INFO - Decreasing delay to 2.8s
+2026-05-02 13:46:10,021 - INFO - Decreasing delay to 2.7s
+2026-05-02 13:46:17,122 - INFO - Decreasing delay to 2.6s
+2026-05-02 13:46:22,347 - INFO - Owner command received: call, chanem?
+2026-05-02 13:46:23,217 - INFO - Decreasing delay to 2.4s
+2026-05-02 13:46:29,168 - INFO - Decreasing delay to 2.3s
+2026-05-02 13:51:08,317 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:51:09,157 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 13:51:09,157 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 13:51:09,157 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 13:51:09,157 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 13:51:09,157 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 13:51:19,013 - INFO - Owner command received: /tag եկեք խաղը սկսվել ա
+2026-05-02 13:51:19,261 - INFO - Starting tagging session with text: եկեք խաղը սկսվել ա
+2026-05-02 13:51:19,263 - INFO - Fetching fresh participants list...
+2026-05-02 13:51:19,825 - INFO - SUCCESS: Fetched 4 eligible users
+2026-05-02 13:51:19,850 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 4                                                                                    ║
+    ║  💎 Premium Users: 1                                                    ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 1                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:51:23,058 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    SESSION COMPLETED SUCCESSFULLY                ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  ✅ Messages Sent: 0                                                                ║
+    ║  👥 Users Mentioned: 4                                                          ║
+    ║  📊 Success Rate: 100.0%                                                                     ║
+    ║  ⏱️  Duration: 3.2s                                                                     ║
+    ║  ❌ Errors: 0                                                                                    ║
+    ║  💰 Efficiency: 1.25 users/sec                                            ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:51:23,733 - INFO - Owner command received: @armcipher @armenocide @merdzeverov @mer_dzevov
+եկեք խաղը սկսվել ա
+2026-05-02 13:52:01,913 - INFO - Owner command received: ժող, կարա՞մ քոլերս ստեղ փորձե՞մ
+2026-05-02 13:57:33,263 - INFO - Owner command received: nu, caller
+2026-05-02 13:57:48,857 - INFO - Owner command received: /tag եկեք խաղը սկսվել ա
+2026-05-02 13:57:49,108 - INFO - Starting tagging session with text: եկեք խաղը սկսվել ա
+2026-05-02 13:57:49,110 - INFO - Fetching fresh participants list...
+2026-05-02 13:57:49,766 - INFO - SUCCESS: Fetched 9 eligible users
+2026-05-02 13:57:49,792 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 9                                                                                    ║
+    ║  💎 Premium Users: 3                                                    ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 2                                                                              ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:58:03,309 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    SESSION COMPLETED SUCCESSFULLY                ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  ✅ Messages Sent: 1                                                                ║
+    ║  👥 Users Mentioned: 9                                                          ║
+    ║  📊 Success Rate: 100.0%                                                                     ║
+    ║  ⏱️  Duration: 13.5s                                                                     ║
+    ║  ❌ Errors: 0                                                                                    ║
+    ║  💰 Efficiency: 0.67 users/sec                                            ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:58:17,422 - INFO - Owner command received: ok a che?
+2026-05-02 13:58:36,747 - INFO - Owner command received: che ban em pordzum zut, brats
+2026-05-02 13:59:29,009 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v5.0 - BATCH EDITION                 ║
+║         5 Users Per Message | Advanced Stop System              ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 13:59:30,269 - INFO - 🎯 Target chat found: yeah bro (ID: -1003942782869)
+2026-05-02 13:59:30,270 - INFO - SUCCESS: 🎯 Target chat locked: yeah bro
+2026-05-02 13:59:30,270 - INFO - 🛑 Stop triggers: Խաղը սկսվում է, սթոփ, stop, STOP, Stop, stop calling, enough, stop tagging, հերիք է, բավական է, դադարեցնել, վերջացրու
+2026-05-02 13:59:30,270 - INFO - SUCCESS: ✅ Bot fully operational!
+2026-05-02 13:59:30,270 - INFO - 💡 Use /help to see all commands
+2026-05-02 13:59:30,270 - WARNING - 🔴 Bot will STOP immediately when stop triggers are detected!
+2026-05-02 14:03:33,748 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v5.0 - BATCH EDITION                 ║
+║         5 Users Per Message | Advanced Stop System              ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 14:03:34,786 - INFO - 🎯 Target chat found: yeah bro (ID: -1003942782869)
+2026-05-02 14:03:34,786 - INFO - SUCCESS: 🎯 Target chat locked: yeah bro
+2026-05-02 14:03:34,786 - INFO - 🛑 Stop triggers: Խաղը սկսվում է, սթոփ, stop, STOP, Stop, stop calling, enough, stop tagging, հերիք է, բավական է, դադարեցնել, վերջացրու
+2026-05-02 14:03:34,786 - INFO - SUCCESS: ✅ Bot fully operational!
+2026-05-02 14:03:34,786 - INFO - 💡 Use /help to see all commands
+2026-05-02 14:03:34,786 - WARNING - 🔴 Bot will STOP immediately when stop triggers are detected!
+2026-05-02 14:03:49,872 - INFO - 🚀 Starting tagging session with text: եկեք մաֆի
+2026-05-02 14:03:49,878 - INFO - Fetching fresh participants list...
+2026-05-02 14:03:50,577 - INFO - SUCCESS: Fetched 182 eligible users
+2026-05-02 14:04:50,673 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 14:04:51,457 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 14:04:51,457 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 14:04:51,457 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 14:04:51,457 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 14:04:51,457 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 14:05:00,058 - INFO - Owner command received: /tag եկեք մաֆ խաղանք
+2026-05-02 14:05:00,362 - INFO - Starting tagging session with text: եկեք մաֆ խաղանք
+2026-05-02 14:05:00,374 - INFO - SUCCESS: Loaded 182 participants from cache
+2026-05-02 14:05:00,383 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 182                                                                                  ║
+    ║  💎 Premium Users: 24                                                   ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 37                                                                             ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 14:05:25,166 - INFO - Decreasing delay to 2.8s
+2026-05-02 14:05:31,945 - INFO - Decreasing delay to 2.7s
+2026-05-02 14:05:39,294 - INFO - Decreasing delay to 2.6s
+2026-05-02 14:05:48,943 - INFO - Decreasing delay to 2.4s
+2026-05-02 14:05:58,362 - INFO - Decreasing delay to 2.3s
+2026-05-02 14:06:06,160 - INFO - Decreasing delay to 2.2s
+2026-05-02 14:06:12,349 - INFO - Decreasing delay to 2.1s
+2026-05-02 14:06:13,374 - INFO - Owner command received: dm gri
+2026-05-02 14:06:18,693 - INFO - Decreasing delay to 2.0s
+2026-05-02 14:06:26,685 - INFO - Owner command received: inch a eghel brats
+2026-05-02 14:32:50,199 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 14:32:51,350 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 14:32:51,350 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 14:32:51,350 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 14:32:51,350 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 14:32:51,350 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 14:33:00,252 - INFO - Owner command received: /tag կպեք խաղին, հարազատներ
+2026-05-02 14:33:00,498 - INFO - Starting tagging session with text: կպեք խաղին, հարազատներ
+2026-05-02 14:33:00,499 - INFO - Fetching fresh participants list...
+2026-05-02 14:33:01,418 - INFO - SUCCESS: Fetched 182 eligible users
+2026-05-02 14:33:01,444 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 182                                                                                  ║
+    ║  💎 Premium Users: 24                                                   ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 37                                                                             ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 15:54:44,667 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 15:54:45,764 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 15:54:45,764 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 15:54:45,764 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 15:54:45,764 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 15:54:45,764 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 15:54:54,811 - INFO - Owner command received: /tag եկեք մաֆիա խաղաքլու
+2026-05-02 15:54:55,059 - INFO - Starting tagging session with text: եկեք մաֆիա խաղաքլու
+2026-05-02 15:54:55,061 - INFO - Fetching fresh participants list...
+2026-05-02 15:54:55,727 - INFO - SUCCESS: Fetched 181 eligible users
+2026-05-02 15:54:55,750 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 181                                                                                  ║
+    ║  💎 Premium Users: 23                                                   ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 37                                                                             ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 15:55:15,107 - INFO - Owner command received: /stopcalling
+2026-05-02 15:55:15,108 - INFO - 🛑 Stop command received. Current status - is_tagging: True
+2026-05-02 15:55:15,108 - INFO - Stopping tagging session gracefully...
+2026-05-02 15:55:15,109 - INFO - Tagging task was cancelled
+2026-05-02 15:55:15,124 - INFO - SUCCESS: ✅ Tagging session stopped successfully
+2026-05-02 15:55:40,887 - INFO - Owner command received: call anem?
+2026-05-02 15:56:02,998 - INFO - Owner command received: chka, vonc vor
+2026-05-02 15:56:29,550 - INFO - Owner command received: խաղ
+2026-05-02 15:56:51,900 - INFO - Owner command received: բաց էր, փակել են, բռատ
+2026-05-02 15:57:01,398 - INFO - Owner command received: թագավոր
+2026-05-02 15:58:23,485 - INFO - Owner command received: գիծ
+2026-05-02 15:59:49,700 - INFO - Owner command received: ամպ
+2026-05-02 16:00:50,522 - INFO - Owner command received: settings
+2026-05-02 16:00:54,131 - INFO - Owner command received: apps
+2026-05-02 16:00:57,000 - INFO - Owner command received: safari
+2026-05-02 16:01:04,178 - INFO - Owner command received: advanced data
+2026-05-02 16:01:10,036 - INFO - Owner command received: clear history
+2026-05-02 16:02:13,173 - INFO - Owner command received: /tag կպեք խաղանք
+2026-05-02 16:02:13,424 - INFO - Starting tagging session with text: կպեք խաղանք
+2026-05-02 16:02:13,424 - INFO - SUCCESS: Loaded 181 participants from cache
+2026-05-02 16:02:13,437 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 181                                                                                  ║
+    ║  💎 Premium Users: 23                                                   ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 37                                                                             ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 16:02:13,438 - INFO - Decreasing delay to 2.8s
+2026-05-02 16:02:20,627 - INFO - Decreasing delay to 2.7s
+2026-05-02 16:02:29,541 - INFO - Decreasing delay to 2.6s
+2026-05-02 16:02:37,241 - INFO - Decreasing delay to 2.4s
+2026-05-02 16:02:43,327 - INFO - Decreasing delay to 2.3s
+2026-05-02 16:02:52,701 - INFO - Decreasing delay to 2.2s
+2026-05-02 16:03:01,966 - INFO - Decreasing delay to 2.1s
+2026-05-02 16:03:10,446 - INFO - Decreasing delay to 2.0s
+2026-05-02 16:04:42,949 - INFO - Owner command received: /play Dumah-Sardarabad (Rock Version)
+2026-05-02 16:04:45,781 - INFO - Session stats saved to database
+2026-05-02 16:05:47,143 - INFO - Owner command received: հեսա նենց բոմբ երգ ա գալիս
+2026-05-02 16:06:12,903 - INFO - Owner command received: rock լսողներ կա՞ն
+2026-05-02 16:06:54,607 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    SESSION COMPLETED SUCCESSFULLY                ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  ✅ Messages Sent: 36                                                               ║
+    ║  👥 Users Mentioned: 181                                                        ║
+    ║  📊 Success Rate: 100.0%                                                                     ║
+    ║  ⏱️  Duration: 281.2s                                                                     ║
+    ║  ❌ Errors: 0                                                                                    ║
+    ║  💰 Efficiency: 0.64 users/sec                                            ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 16:07:40,256 - INFO - Owner command received: /play Enker - Aram Asatryan
+2026-05-02 16:07:53,359 - INFO - Owner command received: /play semamme
+2026-05-02 16:08:45,887 - INFO - Owner command received: ahaha, ekeq voice tapakveq
+2026-05-02 16:09:02,887 - INFO - 
+╔══════════════════════════════════════════════════════════════════╗
+║         PREMIUM TAG MASTER v4.0 - ULTIMATE EDITION               ║
+║              Advanced Caching System | No Redis                  ║
+║                    Enterprise Grade Ready                        ║
+╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 16:09:03,780 - INFO - Found target chat: yeah bro (ID: -1003942782869)
+2026-05-02 16:09:03,780 - INFO - SUCCESS: Target chat locked: yeah bro
+2026-05-02 16:09:03,780 - INFO - SUCCESS: Bot fully operational!
+2026-05-02 16:09:03,780 - INFO - 💡 Use /help in PM to see all commands
+2026-05-02 16:09:03,780 - INFO - Stop triggers configured: ['Խաղը սկսվում է!', 'սթոփ', 'stop', 'STOP', 'Stop', 'stop calling', 'enough']
+2026-05-02 16:09:29,383 - INFO - Owner command received: /tag եկեք կպեք մաֆին 🦅
+2026-05-02 16:09:29,816 - INFO - Starting tagging session with text: եկեք կպեք մաֆին 🦅
+2026-05-02 16:09:29,820 - INFO - Fetching fresh participants list...
+2026-05-02 16:09:30,532 - INFO - SUCCESS: Fetched 181 eligible users
+2026-05-02 16:09:30,551 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 181                                                                                  ║
+    ║  💎 Premium Users: 23                                                   ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 37                                                                             ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 16:09:55,520 - INFO - Decreasing delay to 2.8s
+2026-05-02 16:10:03,665 - INFO - Decreasing delay to 2.7s
+2026-05-02 16:10:08,733 - INFO - Owner command received: /stopcalling
+2026-05-02 16:10:08,733 - INFO - 🛑 Stop command received. Current status - is_tagging: True
+2026-05-02 16:10:08,733 - INFO - Stopping tagging session gracefully...
+2026-05-02 16:10:08,734 - INFO - Tagging task was cancelled
+2026-05-02 16:10:08,746 - INFO - SUCCESS: ✅ Tagging session stopped successfully
+2026-05-02 16:10:45,409 - INFO - Owner command received: լավն ա նիքդ, լավ նկար տա՞մ
+2026-05-02 16:12:17,343 - INFO - Owner command received: ստե նկար քցել լինու՞մ ա
+2026-05-02 16:13:52,816 - INFO - Owner command received: 
+2026-05-02 16:21:27,196 - INFO - Owner command received: 😂😂😂
+2026-05-02 16:22:23,143 - INFO - Owner command received: /play Dumah-Sardarabad (Rock Version)
+2026-05-02 16:22:51,717 - INFO - Owner command received: /tag կպեք խաղանք ⚔️
+2026-05-02 16:22:52,024 - INFO - Starting tagging session with text: կպեք խաղանք ⚔️
+2026-05-02 16:22:52,072 - INFO - Fetching fresh participants list...
+2026-05-02 16:22:52,821 - INFO - SUCCESS: Fetched 180 eligible users
+2026-05-02 16:22:52,857 - INFO - 
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║                    PREMIUM TAGGING SESSION v4.0                  ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  📊 Total Users: 180                                                                                  ║
+    ║  💎 Premium Users: 23                                                   ║
+    ║  👥 Users per message: 5                                                                    ║
+    ║  📦 Total Messages: 36                                                                             ║
+    ╚══════════════════════════════════════════════════════════════════╝
+2026-05-02 16:22:52,858 - INFO - Decreasing delay to 2.6s
+2026-05-02 16:23:00,667 - INFO - Decreasing delay to 2.4s
+2026-05-02 16:23:09,671 - INFO - Decreasing delay to 2.3s
+2026-05-02 16:23:18,593 - INFO - Decreasing delay to 2.2s
+2026-05-02 16:23:24,844 - INFO - Decreasing delay to 2.1s
+2026-05-02 16:23:34,311 - INFO - Decreasing delay to 2.0s
+2026-05-02 16:23:47,420 - INFO - Owner command received: 
+2026-05-02 16:24:03,797 - INFO - Session stats saved to database
+2026-05-02 16:25:49,896 - INFO - Owner command received: բռատ, թողեք երգս լսեմ վայ
+2026-05-02 16:26:03,409 - INFO - Owner command received: /play Dumah-Sardarabad (Rock Version)
+2026-05-02 16:27:28,555 - INFO - Owner command received: /stopcalling
+2026-05-02 16:27:28,556 - INFO - 🛑 Stop command received. Current status - is_tagging: True
+2026-05-02 16:27:28,557 - INFO - Stopping tagging session gracefully...
+2026-05-02 16:27:28,559 - INFO - Tagging task was cancelled
+2026-05-02 16:27:28,566 - INFO - SUCCESS: ✅ Tagging session stopped successfully
